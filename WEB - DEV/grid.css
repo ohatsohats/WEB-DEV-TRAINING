@@ -7,8 +7,8 @@
     grid-template-columns:repeat(4 , 1fr);
     grid-auto-rows:minmax(auto, 250px);
     grid-column-gap: 10px;
-    grid-row-gap:10px
-
+    grid-row-gap:10px;
+    
 }
 
 .wrapper > div  {
@@ -18,9 +18,11 @@
 
 .wrapper >div:first-child {
     grid-row: 1/5;
-    background-color: blue;
-    padding: 10px
+    background-color:white;
+    padding: 10px;
+    color: black;
     
+        
 }
 .wrapper >div:nth-child(2) {
     grid-column: 2/5;
@@ -47,4 +49,13 @@
 .wrapper >div:nth-child(8) {
     grid-column: 2/5;
     background-color: gray
+}
+.wrapper >div:first-child {
+    text-align: center
+}
+.wrapper >div:nth-child(2){
+    text-align: center;
+    text-transform: capitalize;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px
 }
